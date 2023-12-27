@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Парк место",
+  "name": "IISPrilozhenieПаркМестоE",
+  "className": "ПаркМестоE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-парк-место",
+      "modelProjection": "ПаркМестоE"
+    }
+  ]
+}

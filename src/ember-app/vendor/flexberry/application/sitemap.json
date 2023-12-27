@@ -1,0 +1,50 @@
+﻿{
+  "applicationCaption": "Prilozhenie",
+  "applicationTitle": "Prilozhenie",
+  "items": [
+    {
+      "link": null,
+      "menuName": "prilozhenie",
+      "caption": "Prilozhenie",
+      "title": "Prilozhenie",
+      "children": [
+        {
+          "link": "i-i-s-prilozhenie-автомобиль-l",
+          "menuName": null,
+          "caption": "Автомобиль",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-парк-место-l",
+          "menuName": null,
+          "caption": "Парк место",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-парковка-l",
+          "menuName": null,
+          "caption": "Парковка",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-услуга-l",
+          "menuName": null,
+          "caption": "Услуга",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-водитель-l",
+          "menuName": null,
+          "caption": "Водитель",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

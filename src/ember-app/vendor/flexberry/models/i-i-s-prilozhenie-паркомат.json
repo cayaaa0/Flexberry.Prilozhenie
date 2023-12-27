@@ -1,0 +1,78 @@
+﻿{
+  "name": "IISPrilozhenieПаркомат",
+  "modelName": "i-i-s-prilozhenie-паркомат",
+  "className": "Паркомат",
+  "nameSpace": "IIS.Prilozhenie",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "адрес",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номерПарк",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "услуга",
+      "relatedTo": "i-i-s-prilozhenie-услуга",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "парковка",
+      "relatedTo": "i-i-s-prilozhenie-парковка",
+      "inverse": "паркомат"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ПаркоматE",
+      "modelName": "i-i-s-prilozhenie-паркомат",
+      "attrs": [
+        {
+          "name": "номерПарк",
+          "caption": "Номер паркомата",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ПаркоматL",
+      "modelName": "i-i-s-prilozhenie-паркомат",
+      "attrs": [
+        {
+          "name": "номерПарк",
+          "caption": "Номер паркомата",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,91 @@
+﻿{
+  "name": "IISPrilozhenieПарковка",
+  "modelName": "i-i-s-prilozhenie-парковка",
+  "className": "Парковка",
+  "nameSpace": "IIS.Prilozhenie",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "адрес",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номПарковки",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "терминал",
+      "relatedTo": "i-i-s-prilozhenie-терминал",
+      "inverse": "парковка"
+    },
+    {
+      "name": "паркомат",
+      "relatedTo": "i-i-s-prilozhenie-паркомат",
+      "inverse": "парковка"
+    },
+    {
+      "name": "шлагбаум",
+      "relatedTo": "i-i-s-prilozhenie-шлагбаум",
+      "inverse": "парковка"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ПарковкаE",
+      "modelName": "i-i-s-prilozhenie-парковка",
+      "attrs": [
+        {
+          "name": "номПарковки",
+          "caption": "Ном парковки",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "адрес",
+          "caption": "Адрес",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ПарковкаL",
+      "modelName": "i-i-s-prilozhenie-парковка",
+      "attrs": [
+        {
+          "name": "номПарковки",
+          "caption": "Ном парковки",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "адрес",
+          "caption": "Адрес",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

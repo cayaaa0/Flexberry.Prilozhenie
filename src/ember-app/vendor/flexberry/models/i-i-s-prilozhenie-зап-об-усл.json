@@ -1,0 +1,224 @@
+﻿{
+  "name": "IISPrilozhenieЗапОбУсл",
+  "modelName": "i-i-s-prilozhenie-зап-об-усл",
+  "className": "ЗапОбУсл",
+  "nameSpace": "IIS.Prilozhenie",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "времяНачала",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "времяОкон",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "времяОплаты",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "датаНачала",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "Now",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "датаОкон",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "статОпл",
+      "type": "i-i-s-prilozhenie-оплата",
+      "flexberryType": "Оплата",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "автомобиль",
+      "relatedTo": "i-i-s-prilozhenie-автомобиль",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "паркМесто",
+      "relatedTo": "i-i-s-prilozhenie-парк-место",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "услуга",
+      "relatedTo": "i-i-s-prilozhenie-услуга",
+      "inverse": "запОбУсл"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ЗаписьОбУслугеE",
+      "modelName": "i-i-s-prilozhenie-зап-об-усл",
+      "attrs": [
+        {
+          "name": "времяНачала",
+          "caption": "Время начала",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "датаНачала",
+          "caption": "Дата начала",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "времяОкон",
+          "caption": "Время окон",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "датаОкон",
+          "caption": "Дата окон",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "статОпл",
+          "caption": "Стат опл",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "времяОплаты",
+          "caption": "Время оплаты",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ЗапОбУслE",
+      "modelName": "i-i-s-prilozhenie-зап-об-усл",
+      "attrs": [
+        {
+          "name": "времяНачала",
+          "caption": "Время начала",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "датаНачала",
+          "caption": "Дата начала",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "времяОкон",
+          "caption": "Время окон",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "датаОкон",
+          "caption": "Дата окон",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "статОпл",
+          "caption": "Стат опл",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "времяОплаты",
+          "caption": "Время оплаты",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ГосНомер",
+          "lookupValueField": "госНомер",
+          "relationName": "Автомобиль",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "госНомер",
+              "caption": "Гос номер",
+              "hidden": true,
+              "index": 7
+            }
+          ],
+          "index": 6,
+          "type": "standard",
+          "caption": "Автомобиль",
+          "name": "автомобиль",
+          "relatedTo": "i-i-s-prilozhenie-автомобиль",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Адрес",
+          "lookupValueField": "адрес",
+          "relationName": "ПаркМесто",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "адрес",
+              "caption": "Адрес",
+              "hidden": true,
+              "index": 9
+            }
+          ],
+          "index": 8,
+          "type": "standard",
+          "caption": "Парк место",
+          "name": "паркМесто",
+          "relatedTo": "i-i-s-prilozhenie-парк-место",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

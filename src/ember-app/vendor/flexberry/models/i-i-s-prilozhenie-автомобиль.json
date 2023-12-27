@@ -1,0 +1,62 @@
+﻿{
+  "name": "IISPrilozhenieАвтомобиль",
+  "modelName": "i-i-s-prilozhenie-автомобиль",
+  "className": "Автомобиль",
+  "nameSpace": "IIS.Prilozhenie",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "госНомер",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "водитель",
+      "relatedTo": "i-i-s-prilozhenie-водитель",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "АвтомобильE",
+      "modelName": "i-i-s-prilozhenie-автомобиль",
+      "attrs": [
+        {
+          "name": "госНомер",
+          "caption": "Гос номер",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "АвтомобильL",
+      "modelName": "i-i-s-prilozhenie-автомобиль",
+      "attrs": [
+        {
+          "name": "госНомер",
+          "caption": "Гос номер",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

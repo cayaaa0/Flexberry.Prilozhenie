@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Водитель",
+  "name": "IISPrilozhenieВодительE",
+  "className": "ВодительE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-водитель",
+      "modelProjection": "ВодительE"
+    }
+  ]
+}

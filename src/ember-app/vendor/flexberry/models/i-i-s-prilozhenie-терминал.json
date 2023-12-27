@@ -1,0 +1,83 @@
+﻿{
+  "name": "IISPrilozhenieТерминал",
+  "modelName": "i-i-s-prilozhenie-терминал",
+  "className": "Терминал",
+  "nameSpace": "IIS.Prilozhenie",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "адрес",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номерТер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "парковка",
+      "relatedTo": "i-i-s-prilozhenie-парковка",
+      "inverse": "терминал"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТерминалE",
+      "modelName": "i-i-s-prilozhenie-терминал",
+      "attrs": [
+        {
+          "name": "номерТер",
+          "caption": "Номер тер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "адрес",
+          "caption": "Адрес",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ТерминалL",
+      "modelName": "i-i-s-prilozhenie-терминал",
+      "attrs": [
+        {
+          "name": "номерТер",
+          "caption": "Номер тер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "адрес",
+          "caption": "Адрес",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

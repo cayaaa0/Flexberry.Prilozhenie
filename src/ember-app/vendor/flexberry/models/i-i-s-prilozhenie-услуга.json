@@ -1,0 +1,123 @@
+﻿{
+  "name": "IISPrilozhenieУслуга",
+  "modelName": "i-i-s-prilozhenie-услуга",
+  "className": "Услуга",
+  "nameSpace": "IIS.Prilozhenie",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "длительность",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наименование",
+      "type": "i-i-s-prilozhenie-услуги",
+      "flexberryType": "Услуги",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номерУсл",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "стоимость",
+      "type": "i-i-s-prilozhenie-стоимость",
+      "flexberryType": "Стоимость",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "запОбУсл",
+      "relatedTo": "i-i-s-prilozhenie-зап-об-усл",
+      "inverse": "услуга"
+    }
+  ],
+  "projections": [
+    {
+      "name": "УслугаE",
+      "modelName": "i-i-s-prilozhenie-услуга",
+      "attrs": [
+        {
+          "name": "номерУсл",
+          "caption": "Номер усл",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "длительность",
+          "caption": "Длительность",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "стоимость",
+          "caption": "Стоимость",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "УслугаL",
+      "modelName": "i-i-s-prilozhenie-услуга",
+      "attrs": [
+        {
+          "name": "номерУсл",
+          "caption": "Номер усл",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "длительность",
+          "caption": "Длительность",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "стоимость",
+          "caption": "Стоимость",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
