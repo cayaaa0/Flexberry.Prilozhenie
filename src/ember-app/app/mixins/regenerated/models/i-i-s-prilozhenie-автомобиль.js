@@ -27,7 +27,10 @@ export let ValidationRules = {
 
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('АвтомобильE', 'i-i-s-prilozhenie-автомобиль', {
-    госНомер: attr('Гос номер', { index: 0 })
+    госНомер: attr('Гос номер', { index: 0 }),
+    водитель: belongsTo('i-i-s-prilozhenie-водитель', 'Водитель', {
+
+    }, { index: 1 })
   });
 
   modelClass.defineProjection('АвтомобильL', 'i-i-s-prilozhenie-автомобиль', {

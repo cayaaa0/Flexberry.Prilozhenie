@@ -1,5 +1,14 @@
 ﻿{
-  "propertyLookup": [],
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Водитель",
+      "projection": "ВодительL",
+      "detailModelName": null
+    }
+  ],
   "external": false,
   "caption": "Автомобиль",
   "name": "IISPrilozhenieАвтомобильE",

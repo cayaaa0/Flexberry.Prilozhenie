@@ -14,7 +14,7 @@ CREATE TABLE Терминал (
  primaryKey UUID NOT NULL,
  НомерТер INT NULL,
  Адрес VARCHAR(255) NULL,
- Парковка UUID NOT NULL,
+ Паркомат UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 
 
@@ -77,7 +77,7 @@ CREATE TABLE Шлагбаум (
  primaryKey UUID NOT NULL,
  Адрес VARCHAR(255) NULL,
  Положение VARCHAR(6) NULL,
- Парковка UUID NOT NULL,
+ Паркомат UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 
 
@@ -188,8 +188,8 @@ CREATE TABLE ApplicationLog (
  ALTER TABLE Автомобиль ADD CONSTRAINT FKca4a7fead03d21a666acf39f5c4ec2dd762100f2 FOREIGN KEY (Водитель) REFERENCES Водитель; 
 CREATE INDEX Indexca4a7fead03d21a666acf39f5c4ec2dd762100f2 on Автомобиль (Водитель); 
 
- ALTER TABLE Терминал ADD CONSTRAINT FKd297b7bb5dabee20edac674dd936b6aec8f008fc FOREIGN KEY (Парковка) REFERENCES Парковка; 
-CREATE INDEX Indexd297b7bb5dabee20edac674dd936b6aec8f008fc on Терминал (Парковка); 
+ ALTER TABLE Терминал ADD CONSTRAINT FK571027fbbbb122afebc1b6f2ad1ba9d9a060e0a4 FOREIGN KEY (Паркомат) REFERENCES Паркомат; 
+CREATE INDEX Index571027fbbbb122afebc1b6f2ad1ba9d9a060e0a4 on Терминал (Паркомат); 
 
  ALTER TABLE ЗапОбУсл ADD CONSTRAINT FK1c3a3c85769416707f115c9679a260c7d69455a2 FOREIGN KEY (Автомобиль) REFERENCES Автомобиль; 
 CREATE INDEX Index1c3a3c85769416707f115c9679a260c7d69455a2 on ЗапОбУсл (Автомобиль); 
@@ -206,8 +206,8 @@ CREATE INDEX Indexf42c36b3a3ac52f85ef3f2546095912415588968 on Паркомат (
  ALTER TABLE Паркомат ADD CONSTRAINT FKb770a8185951148c6c698519e4db09e7bdb59e34 FOREIGN KEY (Парковка) REFERENCES Парковка; 
 CREATE INDEX Indexb770a8185951148c6c698519e4db09e7bdb59e34 on Паркомат (Парковка); 
 
- ALTER TABLE Шлагбаум ADD CONSTRAINT FK765a83bc8c3db8e14c5701dfd66aafb00566c54a FOREIGN KEY (Парковка) REFERENCES Парковка; 
-CREATE INDEX Index765a83bc8c3db8e14c5701dfd66aafb00566c54a on Шлагбаум (Парковка); 
+ ALTER TABLE Шлагбаум ADD CONSTRAINT FK22747db0174da58988e39769ea2e7d9289181f41 FOREIGN KEY (Паркомат) REFERENCES Паркомат; 
+CREATE INDEX Index22747db0174da58988e39769ea2e7d9289181f41 on Шлагбаум (Паркомат); 
 
  ALTER TABLE STORMWEBSEARCH ADD CONSTRAINT FKc4378e39870eb056aec84088683297a01d2a6200 FOREIGN KEY (FilterSetting_m0) REFERENCES STORMFILTERSETTING; 
 

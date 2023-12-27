@@ -28,18 +28,8 @@
   "belongsTo": [],
   "hasMany": [
     {
-      "name": "терминал",
-      "relatedTo": "i-i-s-prilozhenie-терминал",
-      "inverse": "парковка"
-    },
-    {
       "name": "паркомат",
       "relatedTo": "i-i-s-prilozhenie-паркомат",
-      "inverse": "парковка"
-    },
-    {
-      "name": "шлагбаум",
-      "relatedTo": "i-i-s-prilozhenie-шлагбаум",
       "inverse": "парковка"
     }
   ],

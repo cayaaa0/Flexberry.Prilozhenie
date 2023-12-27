@@ -8,7 +8,9 @@ export let Model = Mixin.create({
   адрес: DS.attr('string'),
   номерПарк: DS.attr('number'),
   услуга: DS.belongsTo('i-i-s-prilozhenie-услуга', { inverse: null, async: false }),
-  парковка: DS.belongsTo('i-i-s-prilozhenie-парковка', { inverse: 'паркомат', async: false })
+  парковка: DS.belongsTo('i-i-s-prilozhenie-парковка', { inverse: 'паркомат', async: false }),
+  шлагбаум: DS.hasMany('i-i-s-prilozhenie-шлагбаум', { inverse: 'паркомат', async: false }),
+  терминал: DS.hasMany('i-i-s-prilozhenie-терминал', { inverse: 'паркомат', async: false })
 });
 
 export let ValidationRules = {
@@ -37,6 +39,20 @@ export let ValidationRules = {
     validators: [
       validator('ds-error'),
       validator('presence', true),
+    ],
+  },
+  шлагбаум: {
+    descriptionKey: 'models.i-i-s-prilozhenie-паркомат.validations.шлагбаум.__caption__',
+    validators: [
+      validator('ds-error'),
+      validator('has-many'),
+    ],
+  },
+  терминал: {
+    descriptionKey: 'models.i-i-s-prilozhenie-паркомат.validations.терминал.__caption__',
+    validators: [
+      validator('ds-error'),
+      validator('has-many'),
     ],
   },
 };

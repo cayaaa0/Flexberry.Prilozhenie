@@ -7,7 +7,7 @@ import { attr, belongsTo, hasMany } from 'ember-flexberry-data/utils/attributes'
 export let Model = Mixin.create({
   адрес: DS.attr('string'),
   положение: DS.attr('i-i-s-prilozhenie-положения'),
-  парковка: DS.belongsTo('i-i-s-prilozhenie-парковка', { inverse: 'шлагбаум', async: false })
+  паркомат: DS.belongsTo('i-i-s-prilozhenie-паркомат', { inverse: 'шлагбаум', async: false })
 });
 
 export let ValidationRules = {
@@ -23,8 +23,8 @@ export let ValidationRules = {
       validator('ds-error'),
     ],
   },
-  парковка: {
-    descriptionKey: 'models.i-i-s-prilozhenie-шлагбаум.validations.парковка.__caption__',
+  паркомат: {
+    descriptionKey: 'models.i-i-s-prilozhenie-шлагбаум.validations.паркомат.__caption__',
     validators: [
       validator('ds-error'),
       validator('presence', true),

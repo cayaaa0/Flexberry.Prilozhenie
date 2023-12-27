@@ -29,14 +29,14 @@ public class SHlagbaum {
     private String положение;
 
     @EdmIgnore
-    @Converter(converterClass = UUIDConverter.class, name = "Parkovka")
-    @Convert("Parkovka")
-    @Column(name = "Парковка", length = 16, unique = true, nullable = false)
-    private UUID _parkovkaid;
+    @Converter(converterClass = UUIDConverter.class, name = "Parkomat")
+    @Convert("Parkomat")
+    @Column(name = "Паркомат", length = 16, unique = true, nullable = false)
+    private UUID _parkomatid;
 
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
-    @JoinColumn(name = "Parkovka", insertable = false, updatable = false)
-    private Parkovka parkovka;
+    @JoinColumn(name = "Parkomat", insertable = false, updatable = false)
+    private Parkomat parkomat;
 
 
     public SHlagbaum() {

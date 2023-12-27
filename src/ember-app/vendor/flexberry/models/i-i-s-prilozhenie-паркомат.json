@@ -41,7 +41,18 @@
       "inverse": "паркомат"
     }
   ],
-  "hasMany": [],
+  "hasMany": [
+    {
+      "name": "шлагбаум",
+      "relatedTo": "i-i-s-prilozhenie-шлагбаум",
+      "inverse": "паркомат"
+    },
+    {
+      "name": "терминал",
+      "relatedTo": "i-i-s-prilozhenie-терминал",
+      "inverse": "паркомат"
+    }
+  ],
   "projections": [
     {
       "name": "ПаркоматE",

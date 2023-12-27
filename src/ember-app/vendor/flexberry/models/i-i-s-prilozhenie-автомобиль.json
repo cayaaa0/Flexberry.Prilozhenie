@@ -38,7 +38,22 @@
           "index": 0
         }
       ],
-      "belongsTo": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Водитель",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 1,
+          "type": "default",
+          "caption": "Водитель",
+          "name": "водитель",
+          "relatedTo": "i-i-s-prilozhenie-водитель",
+          "inverse": null
+        }
+      ],
       "hasMany": []
     },
     {

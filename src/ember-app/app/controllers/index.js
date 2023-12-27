@@ -22,31 +22,31 @@ export default Controller.extend({
             link: 'i-i-s-prilozhenie-автомобиль-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie.i-i-s-prilozhenie-автомобиль-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie.i-i-s-prilozhenie-автомобиль-l.title'),
-            icon: 'tags',
+            icon: 'file',
             children: null
           }, {
             link: 'i-i-s-prilozhenie-парк-место-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie.i-i-s-prilozhenie-парк-место-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie.i-i-s-prilozhenie-парк-место-l.title'),
-            icon: 'phone',
+            icon: 'list',
             children: null
           }, {
             link: 'i-i-s-prilozhenie-парковка-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie.i-i-s-prilozhenie-парковка-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie.i-i-s-prilozhenie-парковка-l.title'),
-            icon: 'address card',
+            icon: 'folder',
             children: null
           }, {
             link: 'i-i-s-prilozhenie-услуга-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie.i-i-s-prilozhenie-услуга-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie.i-i-s-prilozhenie-услуга-l.title'),
-            icon: 'address card',
+            icon: 'briefcase',
             children: null
           }, {
             link: 'i-i-s-prilozhenie-водитель-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie.i-i-s-prilozhenie-водитель-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie.i-i-s-prilozhenie-водитель-l.title'),
-            icon: 'building',
+            icon: 'briefcase',
             children: null
           }]
         }

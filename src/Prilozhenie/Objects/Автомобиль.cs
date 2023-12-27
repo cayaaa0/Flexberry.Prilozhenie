@@ -26,7 +26,8 @@ namespace IIS.Prilozhenie
     [TrimmedStringStorage(false)]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("АвтомобильE", new string[] {
-            "ГосНомер as \'Гос номер\'"})]
+            "ГосНомер as \'Гос номер\'",
+            "Водитель as \'Водитель\'"})]
     [View("АвтомобильL", new string[] {
             "ГосНомер as \'Гос номер\'"})]
     public class Автомобиль : ICSSoft.STORMNET.DataObject

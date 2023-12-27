@@ -29,8 +29,8 @@
     {
       "polymorphic": false,
       "presence": true,
-      "name": "парковка",
-      "relatedTo": "i-i-s-prilozhenie-парковка",
+      "name": "паркомат",
+      "relatedTo": "i-i-s-prilozhenie-паркомат",
       "inverse": "терминал"
     }
   ],

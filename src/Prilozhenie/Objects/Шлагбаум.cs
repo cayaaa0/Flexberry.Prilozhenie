@@ -41,7 +41,7 @@ namespace IIS.Prilozhenie
         
         private IIS.Prilozhenie.Положения fПоложение;
         
-        private IIS.Prilozhenie.Парковка fПарковка;
+        private IIS.Prilozhenie.Паркомат fПаркомат;
         
         // *** Start programmer edit section *** (Шлагбаум CustomMembers)
 
@@ -112,37 +112,37 @@ namespace IIS.Prilozhenie
         }
         
         /// <summary>
-        /// мастеровая ссылка на шапку IIS.Prilozhenie.Парковка.
+        /// мастеровая ссылка на шапку IIS.Prilozhenie.Паркомат.
         /// </summary>
-        // *** Start programmer edit section *** (Шлагбаум.Парковка CustomAttributes)
+        // *** Start programmer edit section *** (Шлагбаум.Паркомат CustomAttributes)
 
-        // *** End programmer edit section *** (Шлагбаум.Парковка CustomAttributes)
+        // *** End programmer edit section *** (Шлагбаум.Паркомат CustomAttributes)
         [Agregator()]
         [NotNull()]
         [PropertyStorage(new string[] {
-                "Парковка"})]
-        public virtual IIS.Prilozhenie.Парковка Парковка
+                "Паркомат"})]
+        public virtual IIS.Prilozhenie.Паркомат Паркомат
         {
             get
             {
-                // *** Start programmer edit section *** (Шлагбаум.Парковка Get start)
+                // *** Start programmer edit section *** (Шлагбаум.Паркомат Get start)
 
-                // *** End programmer edit section *** (Шлагбаум.Парковка Get start)
-                IIS.Prilozhenie.Парковка result = this.fПарковка;
-                // *** Start programmer edit section *** (Шлагбаум.Парковка Get end)
+                // *** End programmer edit section *** (Шлагбаум.Паркомат Get start)
+                IIS.Prilozhenie.Паркомат result = this.fПаркомат;
+                // *** Start programmer edit section *** (Шлагбаум.Паркомат Get end)
 
-                // *** End programmer edit section *** (Шлагбаум.Парковка Get end)
+                // *** End programmer edit section *** (Шлагбаум.Паркомат Get end)
                 return result;
             }
             set
             {
-                // *** Start programmer edit section *** (Шлагбаум.Парковка Set start)
+                // *** Start programmer edit section *** (Шлагбаум.Паркомат Set start)
 
-                // *** End programmer edit section *** (Шлагбаум.Парковка Set start)
-                this.fПарковка = value;
-                // *** Start programmer edit section *** (Шлагбаум.Парковка Set end)
+                // *** End programmer edit section *** (Шлагбаум.Паркомат Set start)
+                this.fПаркомат = value;
+                // *** Start programmer edit section *** (Шлагбаум.Паркомат Set end)
 
-                // *** End programmer edit section *** (Шлагбаум.Парковка Set end)
+                // *** End programmer edit section *** (Шлагбаум.Паркомат Set end)
             }
         }
         
@@ -199,8 +199,8 @@ namespace IIS.Prilozhenie
         /// <summary>
         /// Adds object with type Шлагбаум.
         /// </summary>
-        public DetailArrayOfШлагбаум(IIS.Prilozhenie.Парковка fПарковка) : 
-                base(typeof(Шлагбаум), ((ICSSoft.STORMNET.DataObject)(fПарковка)))
+        public DetailArrayOfШлагбаум(IIS.Prilozhenie.Паркомат fПаркомат) : 
+                base(typeof(Шлагбаум), ((ICSSoft.STORMNET.DataObject)(fПаркомат)))
         {
         }
         

@@ -24,7 +24,7 @@ CREATE TABLE "Терминал"
 
 	"Адрес" NVARCHAR2(255) NULL,
 
-	"Парковка" RAW(16) NOT NULL,
+	"Паркомат" RAW(16) NOT NULL,
 
 	 PRIMARY KEY ("primaryKey")
 ) ;
@@ -143,7 +143,7 @@ CREATE TABLE "Шлагбаум"
 
 	"Положение" NVARCHAR2(6) NULL,
 
-	"Парковка" RAW(16) NOT NULL,
+	"Паркомат" RAW(16) NOT NULL,
 
 	 PRIMARY KEY ("primaryKey")
 ) ;
@@ -353,9 +353,9 @@ ALTER TABLE "Автомобиль"
 CREATE INDEX "Автомобиль_IВо_132" on "Автомобиль" ("Водитель");
 
 ALTER TABLE "Терминал"
-	ADD CONSTRAINT "Терминал_FПар_9351" FOREIGN KEY ("Парковка") REFERENCES "Парковка" ("primaryKey");
+	ADD CONSTRAINT "Терминал_FПар_8621" FOREIGN KEY ("Паркомат") REFERENCES "Паркомат" ("primaryKey");
 
-CREATE INDEX "Терминал_IПар_3896" on "Терминал" ("Парковка");
+CREATE INDEX "Терминал_IПар_2027" on "Терминал" ("Паркомат");
 
 ALTER TABLE "ЗапОбУсл"
 	ADD CONSTRAINT "ЗапОбУсл_FАвт_6743" FOREIGN KEY ("Автомобиль") REFERENCES "Автомобиль" ("primaryKey");
@@ -383,9 +383,9 @@ ALTER TABLE "Паркомат"
 CREATE INDEX "Паркомат_IПарк_71" on "Паркомат" ("Парковка");
 
 ALTER TABLE "Шлагбаум"
-	ADD CONSTRAINT "Шлагбаум_FПар_4478" FOREIGN KEY ("Парковка") REFERENCES "Парковка" ("primaryKey");
+	ADD CONSTRAINT "Шлагбаум_FПар_3748" FOREIGN KEY ("Паркомат") REFERENCES "Паркомат" ("primaryKey");
 
-CREATE INDEX "Шлагбаум_IПарк_618" on "Шлагбаум" ("Парковка");
+CREATE INDEX "Шлагбаум_IПар_8756" on "Шлагбаум" ("Паркомат");
 
 ALTER TABLE "STORMWEBSEARCH"
 	ADD CONSTRAINT "STORMWEBSEARCH_FSTORMFILT_6521" FOREIGN KEY ("FilterSetting_m0") REFERENCES "STORMFILTERSETTING" ("primaryKey");

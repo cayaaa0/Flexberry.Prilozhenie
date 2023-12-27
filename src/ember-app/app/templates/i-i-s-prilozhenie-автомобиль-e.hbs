@@ -34,4 +34,20 @@
     }}
     {{flexberry-validationmessage error=(v-get validationModel "госНомер" "message")}}
   </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-prilozhenie-автомобиль-e.водитель-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.водитель
+      relationName="водитель"
+      projection="ВодительL"
+      title=(t "forms.i-i-s-prilozhenie-автомобиль-e.водитель-caption")
+      readonly=readonly
+      componentName="водительLookup"
+      class=(if (v-get validationModel "водитель" "isInvalid") "error")
+      data-test-i-i-s-prilozhenie-автомобиль-e-водитель=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "водитель" "message")}}
+  </div>
 </form>

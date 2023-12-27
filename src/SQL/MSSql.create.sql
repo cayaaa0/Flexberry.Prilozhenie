@@ -21,7 +21,7 @@ CREATE TABLE [Терминал] (
 
 	 [НомерТер] INT  NULL,
 
-	 [Парковка] UNIQUEIDENTIFIER  NOT NULL,
+	 [Паркомат] UNIQUEIDENTIFIER  NOT NULL,
 
 	 PRIMARY KEY ([primaryKey]))
 
@@ -126,7 +126,7 @@ CREATE TABLE [Шлагбаум] (
 
 	 [Положение] VARCHAR(6)  NULL,
 
-	 [Парковка] UNIQUEIDENTIFIER  NOT NULL,
+	 [Паркомат] UNIQUEIDENTIFIER  NOT NULL,
 
 	 PRIMARY KEY ([primaryKey]))
 

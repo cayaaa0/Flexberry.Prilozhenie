@@ -29,13 +29,7 @@ public class Parkovka {
     private String адрес;
 
     @OneToMany(mappedBy = "parkovka", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
-    private List<Terminal> terminals;
-
-    @OneToMany(mappedBy = "parkovka", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
     private List<Parkomat> parkomats;
-
-    @OneToMany(mappedBy = "parkovka", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
-    private List<SHlagbaum> shlagbaums;
 
 
     public Parkovka() {

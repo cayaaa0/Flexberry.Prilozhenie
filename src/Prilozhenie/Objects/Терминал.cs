@@ -38,7 +38,7 @@ namespace IIS.Prilozhenie
         
         private string fАдрес;
         
-        private IIS.Prilozhenie.Парковка fПарковка;
+        private IIS.Prilozhenie.Паркомат fПаркомат;
         
         /// <summary>
         /// Адрес.
@@ -104,37 +104,37 @@ namespace IIS.Prilozhenie
         }
         
         /// <summary>
-        /// мастеровая ссылка на шапку IIS.Prilozhenie.Парковка.
+        /// мастеровая ссылка на шапку IIS.Prilozhenie.Паркомат.
         /// </summary>
-        // *** Start programmer edit section *** (Терминал.Парковка CustomAttributes)
+        // *** Start programmer edit section *** (Терминал.Паркомат CustomAttributes)
 
-        // *** End programmer edit section *** (Терминал.Парковка CustomAttributes)
+        // *** End programmer edit section *** (Терминал.Паркомат CustomAttributes)
         [Agregator()]
         [NotNull()]
         [PropertyStorage(new string[] {
-                "Парковка"})]
-        public virtual IIS.Prilozhenie.Парковка Парковка
+                "Паркомат"})]
+        public virtual IIS.Prilozhenie.Паркомат Паркомат
         {
             get
             {
-                // *** Start programmer edit section *** (Терминал.Парковка Get start)
+                // *** Start programmer edit section *** (Терминал.Паркомат Get start)
 
-                // *** End programmer edit section *** (Терминал.Парковка Get start)
-                IIS.Prilozhenie.Парковка result = this.fПарковка;
-                // *** Start programmer edit section *** (Терминал.Парковка Get end)
+                // *** End programmer edit section *** (Терминал.Паркомат Get start)
+                IIS.Prilozhenie.Паркомат result = this.fПаркомат;
+                // *** Start programmer edit section *** (Терминал.Паркомат Get end)
 
-                // *** End programmer edit section *** (Терминал.Парковка Get end)
+                // *** End programmer edit section *** (Терминал.Паркомат Get end)
                 return result;
             }
             set
             {
-                // *** Start programmer edit section *** (Терминал.Парковка Set start)
+                // *** Start programmer edit section *** (Терминал.Паркомат Set start)
 
-                // *** End programmer edit section *** (Терминал.Парковка Set start)
-                this.fПарковка = value;
-                // *** Start programmer edit section *** (Терминал.Парковка Set end)
+                // *** End programmer edit section *** (Терминал.Паркомат Set start)
+                this.fПаркомат = value;
+                // *** Start programmer edit section *** (Терминал.Паркомат Set end)
 
-                // *** End programmer edit section *** (Терминал.Парковка Set end)
+                // *** End programmer edit section *** (Терминал.Паркомат Set end)
             }
         }
         
@@ -188,8 +188,8 @@ namespace IIS.Prilozhenie
         /// <summary>
         /// Adds object with type Терминал.
         /// </summary>
-        public DetailArrayOfТерминал(IIS.Prilozhenie.Парковка fПарковка) : 
-                base(typeof(Терминал), ((ICSSoft.STORMNET.DataObject)(fПарковка)))
+        public DetailArrayOfТерминал(IIS.Prilozhenie.Паркомат fПаркомат) : 
+                base(typeof(Терминал), ((ICSSoft.STORMNET.DataObject)(fПаркомат)))
         {
         }
         

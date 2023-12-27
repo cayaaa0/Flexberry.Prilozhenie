@@ -8,6 +8,7 @@ import javax.persistence.*;
 import java.util.UUID;
 
 import com.sap.olingo.jpa.metadata.core.edm.annotation.EdmIgnore;
+import java.util.List;
 
 /**
  * Entity implementation class for Entity: Паркомат
@@ -47,6 +48,12 @@ public class Parkomat {
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
     @JoinColumn(name = "Parkovka", insertable = false, updatable = false)
     private Parkovka parkovka;
+
+    @OneToMany(mappedBy = "parkomat", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
+    private List<SHlagbaum> shlagbaums;
+
+    @OneToMany(mappedBy = "parkomat", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
+    private List<Terminal> terminals;
 
 
     public Parkomat() {

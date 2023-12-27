@@ -38,6 +38,10 @@ namespace IIS.Prilozhenie
         
         private IIS.Prilozhenie.Услуга fУслуга;
         
+        private IIS.Prilozhenie.DetailArrayOfТерминал fТерминал;
+        
+        private IIS.Prilozhenie.DetailArrayOfШлагбаум fШлагбаум;
+        
         private IIS.Prilozhenie.Парковка fПарковка;
         
         /// <summary>
@@ -134,6 +138,76 @@ namespace IIS.Prilozhenie
                 // *** Start programmer edit section *** (Паркомат.Услуга Set end)
 
                 // *** End programmer edit section *** (Паркомат.Услуга Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Паркомат.
+        /// </summary>
+        // *** Start programmer edit section *** (Паркомат.Терминал CustomAttributes)
+
+        // *** End programmer edit section *** (Паркомат.Терминал CustomAttributes)
+        public virtual IIS.Prilozhenie.DetailArrayOfТерминал Терминал
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Паркомат.Терминал Get start)
+
+                // *** End programmer edit section *** (Паркомат.Терминал Get start)
+                if ((this.fТерминал == null))
+                {
+                    this.fТерминал = new IIS.Prilozhenie.DetailArrayOfТерминал(this);
+                }
+                IIS.Prilozhenie.DetailArrayOfТерминал result = this.fТерминал;
+                // *** Start programmer edit section *** (Паркомат.Терминал Get end)
+
+                // *** End programmer edit section *** (Паркомат.Терминал Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Паркомат.Терминал Set start)
+
+                // *** End programmer edit section *** (Паркомат.Терминал Set start)
+                this.fТерминал = value;
+                // *** Start programmer edit section *** (Паркомат.Терминал Set end)
+
+                // *** End programmer edit section *** (Паркомат.Терминал Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Паркомат.
+        /// </summary>
+        // *** Start programmer edit section *** (Паркомат.Шлагбаум CustomAttributes)
+
+        // *** End programmer edit section *** (Паркомат.Шлагбаум CustomAttributes)
+        public virtual IIS.Prilozhenie.DetailArrayOfШлагбаум Шлагбаум
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Паркомат.Шлагбаум Get start)
+
+                // *** End programmer edit section *** (Паркомат.Шлагбаум Get start)
+                if ((this.fШлагбаум == null))
+                {
+                    this.fШлагбаум = new IIS.Prilozhenie.DetailArrayOfШлагбаум(this);
+                }
+                IIS.Prilozhenie.DetailArrayOfШлагбаум result = this.fШлагбаум;
+                // *** Start programmer edit section *** (Паркомат.Шлагбаум Get end)
+
+                // *** End programmer edit section *** (Паркомат.Шлагбаум Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Паркомат.Шлагбаум Set start)
+
+                // *** End programmer edit section *** (Паркомат.Шлагбаум Set start)
+                this.fШлагбаум = value;
+                // *** Start programmer edit section *** (Паркомат.Шлагбаум Set end)
+
+                // *** End programmer edit section *** (Паркомат.Шлагбаум Set end)
             }
         }
         
